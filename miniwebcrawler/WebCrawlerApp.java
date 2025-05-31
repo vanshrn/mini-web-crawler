@@ -28,7 +28,7 @@ public class WebCrawlerApp {
                 System.out.print("Password: ");
                 String password = scanner.nextLine();
 
-                // Attempt login
+                // attempt login
                 cookies = AuthManager.login(loginUrl, username, password);
 
                 if (cookies == null) {
@@ -55,7 +55,7 @@ public class WebCrawlerApp {
             System.out.println("An error occurred: " + e.getMessage());
             e.printStackTrace();
         } finally {
-            scanner.close();  // Always close the scanner in finally block
+            scanner.close(); 
         }
     }
 }
